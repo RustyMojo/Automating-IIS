@@ -320,7 +320,7 @@ class ServerUpdater:
 class Menu:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("RedOffice Management")
+        self.root.title("<product> Management")
         self.root.geometry("400x300")  # Set a larger window size
 
         # Create a frame to organize the widgets
@@ -328,7 +328,7 @@ class Menu:
         self.frame.pack(pady=20)  # Add vertical spacing around the frame
 
         # Create a title label
-        title_label = tk.Label(self.frame, text="RedOffice Management", font=("Arial", 16))
+        title_label = tk.Label(self.frame, text="<product> Management", font=("Arial", 16))
         title_label.pack()
 
         # Add some vertical spacing
@@ -508,8 +508,8 @@ class newClient:
             site_directory = os.path.join(base_dir, entry_label_text)
             os.makedirs(site_directory, exist_ok=True)
 
-            # Create a "RedOffice" directory within the newly created directory
-            red_office_directory_path = os.path.join(site_directory, "RedOffice")
+            # Create a "<product>" directory within the newly created directory
+            red_office_directory_path = os.path.join(site_directory, "<product>")
             os.makedirs(red_office_directory_path, exist_ok=True)
 
             # Make the app pool
@@ -526,7 +526,7 @@ class newClient:
                         os.makedirs(extract_path, exist_ok=True)
                         zip_ref.extractall(extract_path)
 
-                        variable_name = f"{entry_label_text}RedOffice{subdir}"
+                        variable_name = f"{entry_label_text}<product>{subdir}"
                         self.make_appPool(variable_name)
                         self.make_app(extract_path, subdir, variable_name)
 
@@ -712,7 +712,7 @@ class updateClient:
                         os.makedirs(extract_path, exist_ok=True)
                         zip_ref.extractall(extract_path)
 
-                        variable_name = f"{entry_label_text}RedOffice{subdir}"
+                        variable_name = f"{entry_label_text}<product>{subdir}"
                         self.make_appPool(variable_name)
                         self.make_app(extract_path, subdir, variable_name)
 
