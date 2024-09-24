@@ -1,14 +1,14 @@
 # Report: Server Updater on IIS
 
 ## Introduction
-This report outlines the functionality, usage, and safety measures of the Server Updater program designed for managing servers on IIS. With a user-friendly graphical interface, the program streamlines the processes of updating, creating, or removing RedOffice servers, making it accessible even for non-technical users.
+This report outlines the functionality, usage, and safety measures of the Server Updater program designed for managing servers on IIS. With a user-friendly graphical interface, the program streamlines the processes of updating, creating, or removing <product> servers, making it accessible even for non-technical users.
 
 ## Key Functionalities
 The Server Updater offers four primary functions:
-1. **Update Existing Server Version:** Replace files of an existing RedOffice server with a new version from a ZIP archive.
-2. **Create New Site and Server:** Set up a new RedOffice server using files from a provided ZIP archive.
+1. **Update Existing Server Version:** Replace files of an existing <product> server with a new version from a ZIP archive.
+2. **Create New Site and Server:** Set up a new <product> server using files from a provided ZIP archive.
 3. **Add Environments to Existing Server:** Incorporate additional environments (e.g., Prod, Test) into an existing server setup.
-4. **Delete Existing Site and Server:** Remove an existing RedOffice server or its environments.
+4. **Delete Existing Site and Server:** Remove an existing <product> server or its environments.
 
 ## Detailed Functionality
 
